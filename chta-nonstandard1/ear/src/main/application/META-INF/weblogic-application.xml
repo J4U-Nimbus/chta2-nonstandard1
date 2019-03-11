@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wls:weblogic-application xmlns:wls="http://xmlns.oracle.com/weblogic/weblogic-application" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_0.xsd http://xmlns.oracle.com/weblogic/weblogic-application http://xmlns.oracle.com/weblogic/weblogic-application/1.2/weblogic-application.xsd">
+    <!--weblogic-version:10.3.5-->
+    <!--  ================Uncomment only when mapping an application role to container group name ================== -->
+	<!-- <wls:security>
+          <wls:security-role-assignment>
+          <wls:role-name>ROLE_USER</wls:role-name>
+          <wls:principal-name>Appusergroup</wls:principal-name>
+          </wls:security-role-assignment>
+          <wls:security-role-assignment>
+          <wls:role-name>ROLE_ADMIN</wls:role-name>
+          <wls:principal-name>Appadmingroup</wls:principal-name>
+          </wls:security-role-assignment>
+    </wls:security>-->
+    
+    <wls:application-param>
+        <wls:param-name>webapp.encoding.default</wls:param-name>
+        <wls:param-value>UTF-8</wls:param-value>
+    </wls:application-param>
+     
+     <wls:session-descriptor>
+      <wls:cookie-http-only>false</wls:cookie-http-only>
+    </wls:session-descriptor>
+
+    <!-- Added slf4j / org.apache.commons due to library conflict with weblogic 12c. -->
+    <wls:prefer-application-packages>
+        <wls:package-name>antlr.*</wls:package-name>
+        <wls:package-name>org.slf4j.*</wls:package-name>
+    	<wls:package-name>org.apache.commons.*</wls:package-name>
+    </wls:prefer-application-packages>
+    
+	<wls:prefer-application-resources>
+	    <wls:resource-name>org/slf4j/impl/StaticLoggerBinder.class</wls:resource-name>
+	</wls:prefer-application-resources>
+
+</wls:weblogic-application>

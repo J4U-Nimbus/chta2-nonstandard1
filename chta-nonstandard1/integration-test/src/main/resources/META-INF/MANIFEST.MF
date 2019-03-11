@@ -1,0 +1,10 @@
+Built-By: ${build-master-id}
+Built-On-OS-Name: ${os.name}
+Built-On-OS-Arch: ${os.arch}
+Built-On-OS-Version: ${os.version}
+Build-Timestamp: ${timestamp}
+Implementation-Title: ${project.name}
+Implementation-Version: ${project.version}
+Implementation-Vendor-Id: ${project.groupId}
+SCM-Branch: ${scm-branch}
+SVN-Revision: ${svn-revision}

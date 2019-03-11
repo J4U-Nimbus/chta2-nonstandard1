@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+    xmlns:tx="http://www.springframework.org/schema/tx" xmlns:jpa="http://www.springframework.org/schema/data/jpa"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xsi:schemaLocation="http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    
+    <context:component-scan base-package="com.albertsons" />
+    
+    <!--  bean configuration class -->
+        <!-- <bean class="com.albertsons.VaadinUI.MyConfiguration" /> -->
+    
+    <!--  Add your database configuration here (if required). Sample configuration is described below -->
+    
+   <!--  <jpa:repositories base-package="com.albertsons" />
+
+    <bean id="transactionManager" class="org.springframework.orm.jpa.JpaTransactionManager">
+        <property name="entityManagerFactory" ref="entityManagerFactory" />
+    </bean>
+      <bean id="entityManagerFactory"
+        class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
+        <property name="dataSource" ref="dataSource" />
+        <property name="packagesToScan" value="com.albertsons" />
+        <property name="jpaVendorAdapter">
+            <bean class="org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter">
+                <property name="database" value="HSQL" />
+                <property name="generateDdl" value="true" />                
+            </bean>
+        </property>
+    </bean>
+    
+    <jdbc:embedded-database id="dataSource" type="HSQL" />
+    
+    <jdbc:initialize-database data-source="dataSource"
+              enabled="true" >
+              <jdbc:script location="classpath:/dbSchema.sql"/>
+             
+       </jdbc:initialize-database> -->
+
+    <context:annotation-config />
+</beans>
