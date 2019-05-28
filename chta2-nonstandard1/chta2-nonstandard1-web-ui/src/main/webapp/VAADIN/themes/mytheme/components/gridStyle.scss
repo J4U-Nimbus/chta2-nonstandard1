@@ -1,0 +1,1081 @@
+@mixin gridStyle {
+
+.button-Recalc-seperator{
+	height:30px!important;
+	width:70px!important;
+    margin-left: 20px;}
+.button-Recalc-seperator:before{
+	 		    content: " | ";
+			    padding: 0;
+			    top: -16px;
+			    position: relative;
+			    left: -34px;
+			    font-size: 39px;
+			    font-weight: 100;
+			    color: 	#D3D3D3;
+	}	
+
+.strike-through-deleted .v-grid-cell{
+    text-decoration: line-through;
+}
+
+.WorklistGridPromoButtonNav{
+	padding: 0;
+    text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    background: none;
+    height: auto!important;
+    display:block;
+   } 
+  
+ .getGridOfferLink{
+ 	padding: 0;
+    text-shadow: none;
+    border: 0;
+    box-shadow: none;
+    background: none;
+    height: auto!important;
+    text-decoration:none;
+ }   
+ 
+  .starRedInline{
+  display:inline;
+  }  
+    
+.userprefgridlayout{ 
+       font-weight: 400;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	    .v-grid-header .v-grid-select-all-checkbox{
+	    	display: none;
+	    }
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+	    padding: 0px 1px 0px 4px;
+	    background-color: #ffffff;
+	    border-bottom: 1px solid #c8c8c8;
+	    font-size: 12px;
+	    text-align: left;
+	  }
+	    .v-grid-body{
+	  		margin-top: 40px !important;
+	  	}
+	  .v-grid-header .v-grid-cell {
+	    padding: 5px 0px 4px 4px;
+	    color: #54698d;
+	    text-transform: uppercase;
+	    letter-spacing: .5px;
+	    font-weight: 600;
+	    background-image: none;
+	    font-size: 12px;
+	    text-align: left;
+	    background-color: #f8f9fa;
+	    height: 40px !important;
+	         .v-grid-column-header-content{
+	    		 line-height: 18px !important;
+	    }
+	  }
+	  .v-grid-header-deco {
+	    background: #f8f9fa;
+	    border: 0;
+	    background-image:none;
+	  }
+	  .v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	  .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	  
+	}
+
+.allowanceGridtooltips{
+	
+	
+//tooltip section for  allowance grid
+
+		.v-grid-header .v-grid-cell .v-grid-column-header-content{
+				&:hover::after{    
+				    //content: "Common Item Group code";
+				    background-color: #fff;
+				    color: #4e4e4e;
+				    font-weight:400;
+				    text-align: center;
+				    border-radius: 5px;
+				    padding: 0px 0px;
+				    position: absolute;
+				    font-family: Roboto;
+				    z-index: 1;
+				    width: 125px;
+				    line-height: 2;
+				    border: 1px solid #d8dde6;
+				    font-size: 10px;
+				    text-transform: initial;
+				    margin-top: 32px;
+				    margin-left: -41px;
+			  
+			}
+	  }
+	  
+	    .v-grid-header .v-grid-cell:nth-child(1) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Offer Number";
+				    margin-left: 5px; 
+				     width: 135px;  
+			}
+			
+		}
+		 .v-grid-header .v-grid-cell:nth-child(2) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Offer Status";
+				    margin-left: 5px; 
+				     width: 135px;  
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(3) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Event Name";   
+			}
+			
+		}
+	  	.v-grid-header .v-grid-cell:nth-child(4) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Performance Code";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(5) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Allowance Amount";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(6) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Header Flat Allowance";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(7) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Overlapping Item Count | Promotion Item Count | Offer Item Count";   
+				    width:170px;
+				    padding:0px;
+				    text-align:left;
+				    font-size:8px;
+			}
+			
+		}
+			
+	}
+	
+		//tooltip section for  allowance grid
+	
+.pricingGridtooltips{
+	
+	
+	//tooltip section for pricingGrid
+		.v-grid-header .v-grid-cell .v-grid-column-header-content{
+				&:hover::after{    
+				    //content: "Common Item Group code";
+				    background-color: #fff;
+				    color: #4e4e4e;
+				    font-weight:400;
+				    text-align: center;
+				    border-radius: 5px;
+				    padding: 0px 0px;
+				    position: absolute;
+				    font-family: Roboto;
+				    z-index: 1;
+				    width: 125px;
+				    line-height: 2;
+				    border: 1px solid #d8dde6;
+				    font-size: 10px;
+				    text-transform: initial;
+				    margin-top: 32px;
+				    margin-left: -41px;
+			  
+			}
+	  }
+	  
+	    .v-grid-header .v-grid-cell:nth-child(1) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Division Number";
+				    margin-left: 5px; 
+				     width: 135px;  
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(2) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Retail Order Group";   
+			}
+			
+		}
+	  	.v-grid-header .v-grid-cell:nth-child(3) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Regular Retail Price";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(4) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Pricing Method";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(5) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Pricing Factor";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(6) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Promotional Price";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(8) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Pricing Unit";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(9) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Promotion Limit";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(10) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Minimum purchase";   
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(11) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Total Store Count";   
+			}
+			
+		}
+	}		
+		
+		
+		//tooltip section for pricingGrid
+		
+.itemsGridtooltips{
+	
+	//tooltip section for itemsGrid
+				.v-grid-header .v-grid-cell .v-grid-column-header-content{
+				&:hover::after{    
+				    //content: "Common Item Group code";
+				    background-color: #fff;
+				    color: #4e4e4e;
+				    font-weight:400;
+				    text-align: center;
+				    border-radius: 5px;
+				    padding: 0px 0px;
+				    position: absolute;
+				    font-family: Roboto;
+				    z-index: 1;
+				    width: 125px;
+				    line-height: 2;
+				    border: 1px solid #d8dde6;
+				    font-size: 10px;
+				    text-transform: initial;
+				    margin-top: 32px;
+				    margin-left: -41px;
+			  
+			}
+	  }
+	  
+	    .v-grid-header .v-grid-cell:nth-child(1) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Common Item Group code";
+				    margin-left: 5px; 
+				     width: 135px;  
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(2) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Corporate Item Code";   
+			}
+			
+		}
+	  	.v-grid-header .v-grid-cell:nth-child(3) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Universal Product Code";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(4) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "WIMS Item Description";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(5) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Product Source";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(6) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Pack";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(7) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Size";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(8) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Regular Retail Price";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(9) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Vendor Item List Cost";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(10) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Item Billing Cost";   
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(11) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Retail Allowance";   
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(12) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Net Cost Amount";   
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(13) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Savings";   
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(14) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Billing Gross";   
+			}
+			
+		}
+		.v-grid-header .v-grid-cell:nth-child(15) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Product Look Up";   
+			}
+			
+		}
+	}		
+		
+		
+		//tooltip section for itemsGrid
+
+	//promotions screen
+	.v-verticallayout-promoDetailContent{
+	 .v-label.v-disabled {
+	   opacity: 0.7;
+	  }
+	 .v-grid.v-disabled {
+   		 opacity: 0.7;
+      }
+     
+      
+    }
+	.v-slot-promotionsGrid{
+		.v-grid-column-default-header-content {
+		white-space: normal;
+		width: 45px;
+		overflow: visible;
+		}
+	}
+
+	.v-slot-locationsGrid > .v-disabled{
+	//height:90px!important;	
+		
+	}
+	.promoDetailContent .v-slot-itemsControlSection{
+		padding: 20px 0px 2px;
+	    margin: 9px 1% 20px;
+	    border-radius: 6px;
+	    background-color: #ffffff;
+	    box-shadow: 0px 2px 9px rgba(216,221,230,1);
+	}
+	
+	.savePricingButton{    margin: 4px 16px;}
+	
+	.v-horizontallayout-addSectionLayout{
+		padding: 0 1%;
+	}
+	.addSectionLayoutSection{
+		padding: 0 1%;
+	}
+	.linkRowForAllowanceDetails{
+		padding: 0 1%;
+		
+    }
+    .locationsSectionLayout {
+        padding: 0 0 8px;
+    }
+	.promoDetailContent{	    
+		background-color: #f8f9fa;
+	}
+	.promoDetailContent .v-slot-locationsControlSection{
+		padding: 20px 0px 2px;
+	    margin: 0px 1% 20px;
+	    border-radius: 6px;
+	    background-color: #ffffff;
+		box-shadow: 0px 2px 9px rgba(216,221,230,1);
+		    
+    	}
+		.promoDetailContent .v-slot-allowanceDetailView{
+		padding: 20px 0px 2px;
+	    margin: 0px 1% 30px;
+	    border-radius: 6px;
+	    background-color: #ffffff;
+		box-shadow: 0px 2px 9px rgba(216,221,230,1);
+		    
+    	}
+    	
+	
+	
+		//promotions screen
+	
+	
+	.v-grid-worklistGrid.v-grid-column-header-content{
+	font-family:Roboto!important;
+	}
+	
+	.v-grid-column-default-header-content{
+	font-family:Roboto!important;
+	
+	}
+	
+	.btn_hdr.tertiary-btn-md {
+		width: 60px;
+  		height: 30px;
+  	}
+	
+	.g-wraptext
+	{
+		white-space: normal;
+	}	
+	
+	.g-button-elipses
+	{
+		width: 30px;
+   		height: 24px;
+   }
+	.g-button-info
+	{
+		width: 24px;
+   		height: 28px;	
+   		margin-right: 5px;
+	}
+	.g-button-align
+	{
+		text-align: right;
+	}
+
+
+.promotionsGrid {
+	  font-weight: 400;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+	    padding: 0px 1px 0px 4px;
+	    background-color: #ffffff;
+	    border-bottom: 1px solid #c8c8c8;
+	    font-size: 12px;
+	    text-align: left;
+	  }
+	    .v-grid-body{
+	  		margin-top: 40px !important;
+	  	}
+	  .v-grid-header .v-grid-cell {
+	    padding: 5px 0px 4px 4px;
+	    color: #54698d;
+	    text-transform: uppercase;
+	    letter-spacing: .5px;
+	    font-weight: 600;
+	    background-image: none;
+	    font-size: 12px;
+	    text-align: left;
+	    background-color: #f8f9fa;
+	    height: 40px !important;
+	         .v-grid-column-header-content{
+	    		 line-height: 18px !important;
+	    }
+	  }
+	  .v-grid-header-deco {
+	    background: #f8f9fa;
+	    border: 0;
+	    background-image:none;
+	  }
+	  .v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	  .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	}
+
+.locationsGrid {
+	  font-weight: 400;
+	 // overflow: auto;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	    
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+		    padding: 5px 5px 8px 12px;
+		    background-color: #ffffff;
+		    border-bottom: 1px solid #c8c8c8;
+		    font-size: 12px;
+		    background-image: none;
+		    // margin-top: 11px;
+		    height: 49px !important
+	  }
+		  .v-grid-header .v-grid-row:nth-child(1) .v-grid-cell {
+		    padding: 5px 0px 8px 12px;
+		    color: #54698d;
+		    text-transform: uppercase;
+		    letter-spacing: .5px;
+		    font-weight: 600;
+		    background-image: none;
+		    font-size: 12px;
+		    text-align: left;
+		    background-color: #f8f9fa;
+		    height: 40px !important;
+		  }
+	   .v-grid-header .v-grid-row:nth-child(2) .v-grid-cell{
+		  	border: 0;
+		    padding: 5px 5px 8px 12px;
+		    background-color: #ffffff;
+		    border-bottom: 1px solid #c8c8c8;
+		    font-size: 12px;
+		    background-image: none;
+		    height: 49px !important
+		}
+		.v-grid-header-deco {
+		    background: #f8f9fa;
+		    border: 0;
+		    background-image:none;
+		  }
+		.v-grid-body{
+	  		margin-top: 90px !important;
+	  	}
+	  	.v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	   .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	  
+	}
+
+	.v-grid-cell .deleteButton.p-grid-delete
+	{
+		width: 22px;
+  		height: 22px;
+  		border:0;
+		font-size: 18px;
+		background-image: none;
+		color: #8d99ae;
+		opacity: 0.7;
+		background: transparent;
+		box-shadow: 0 0 0;
+		display: table-row;
+   	}
+
+	
+	
+	.worklistGrid {
+	
+	//tooltip section for worklist
+				.v-grid-header .v-grid-cell .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Description of promotion";
+				    background-color: #fff;
+				    color: #4e4e4e;
+				    font-weight:400;
+				    text-align: center;
+				    border-radius: 5px;
+				    padding: 0px 10px;
+				    position: absolute;
+				    font-family: Roboto;
+				    z-index: 1;
+				    //width: 125px;
+				    line-height: 2;
+				    border: 1px solid #d8dde6;
+				    font-size: 11px;
+				    text-transform: initial;
+				    margin-top: 32px;
+				    margin-left: -41px;
+			  
+			}
+	  }
+	  	.v-grid-header .v-grid-cell:nth-child(1) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Promotion Name";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(2) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Promotion Status";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(3) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Event Name";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(4) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Performance Code";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(5) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Corporate Item Code";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(6) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Vendor Name";   
+			}
+			
+		}
+			.v-grid-header .v-grid-cell:nth-child(7) .v-grid-column-header-content{
+				&:hover::after{    
+				    content: "Store Count";   
+			}
+			
+		}
+		
+		
+		
+		
+		//tooltip section for worklist
+		
+font-weight: 400;
+.v-grid-tablewrapper {
+border: 0;
+}
+.v-grid-row .v-grid-cell {
+border: 0;
+padding: 7px 5px 8px 5px;
+background-color: #ffffff ;
+border-bottom: none;
+vertical-align: middle;
+font-size: 13px;
+border-bottom: 1px solid #c8c8c8;
+}
+.v-grid-body{
+margin-top: 40px !important;
+}
+.v-grid-row {
+&:hover {
+         background-image: none;
+         background: none;
+         border-bottom: none;
+         border: 1px solid;
+         margin: -2px;
+         margin-left: 1px;
+    }     
+&:focus {
+         background-image: -webkit-linear-gradient(top, #f8f9fa 1%, #166ed5 336%);
+    }     
+}
+.v-grid-header .v-grid-cell {
+padding: 5px 5px 8px 5px;
+color: #54698d ;
+text-transform: uppercase;
+letter-spacing: .5px;
+font-weight: 600;
+background-image: none;
+font-size: 13px;
+text-align: left;
+background-color: #f8f9fa;
+height: 38px !important;
+vertical-align: middle;
+}
+.v-grid-header-deco {
+background-color: #f8f9fa;
+border: 0;
+background-image: none;
+}
+.v-grid-footer-deco{
+background-color: #f8f9fa;
+border: 0;
+}
+.v-grid-row-selected > .v-grid-cell{
+// background-image: -webkit-linear-gradient(top, #f8f9fa 1%, #166ed5 336%);
+background-image: none;
+background: #f8f9fa;
+}
+.v-grid-scroller-vertical {
+background-image: none;
+border: 0;
+background: #ffffff ;
+top: 40px !important;
+}
+.v-grid-row-focused {
+//border: 1px solid;
+//outline: 0 !important;
+}
+.v-grid-cell{background-color:  #90a4ae;}
+.v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+border: 0;
+//color: currentColor;
+}
+.v-grid-header .v-grid-cell-focused {
+  outline: 0 !important;
+  color: currentColor;
+&::before {
+   border: 0;
+   background: none;
+   border-bottom: none;
+   color: currentColor;
+}
+}
+}
+	
+
+		.NormalBlackText_WGrid {
+	
+	      font-size: 13px;
+	      letter-spacing: 0.1px;
+	      text-align: left;
+	      color: #4a4a4a;
+	    }
+	    
+	  .removeUnderline
+	  {
+	  	text-decoration: none;
+	  	margin-right: 12px;
+	  }  
+	  
+	 .redColor{
+		color: #fa5555;
+	  }
+
+	  .BlueTextGrid {
+		  font-size: 13px;
+		  display: inline;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #00a0e0;
+		}
+	
+	
+	.popup_grid
+	{
+		 font-weight: 300;
+		 .v-grid-tablewrapper {
+	    	border: 0;
+	  	}
+	  	.v-grid-cell {
+	    	border: 0;
+	    	background-color: #f8f9fa;
+	    	border-bottom: 1px solid #D3D3D3;
+	    	font-weight: initial;
+	    	font-size: 14px;
+	    }
+	    .v-grid-column-header-content
+	    {
+	    	margin-left: -10px
+	   	}
+		.v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    	border: 0;
+	  	}
+	  	.v-grid-body{
+	  		margin-top: 40px !important;
+	  		
+	  	}
+	    .v-grid-row .v-grid-cell{
+	  		padding-top: 10px;
+	  		border-bottom: 1px solid #c8c8c8;
+		    color: currentColor;
+		    vertical-align: middle;
+			font-size: 13px;
+		}
+	  	 .v-grid-header-deco {
+		    background: #f8f9fa;
+		    border: 0;
+	  	}
+	  	.v-grid-scroller-vertical {
+		    background-image: none;
+		    border: 0;
+		    background: #fff;
+		    top: 40px !important;
+	  	}
+	  	.v-grid-header .v-grid-cell {
+		    color: #54698d;
+		    letter-spacing: .5px;
+		    font-weight: 600;
+		    background-image: none;
+		    font-size: 12px;
+		    text-align: left;
+		    background-color: #f8f9fa;
+		    height: 40px !important;
+		    border-top: 1px solid #D3D3D3;
+	  	}
+	    .v-grid-column-header-content
+	    {
+	    	line-height: 20px;
+	    } 
+	    .v-grid-column-default-header-content
+	 	 {
+	  		background-color: #f8f9fa;
+	 	 }
+	     .v-grid-cell-focused {
+		    color: #54698d;
+		    letter-spacing: .5px;
+		    font-weight: 400;
+		    background-image: none;
+		    font-size: 12px;
+		    text-align: left;
+		    background-color: #f8f9fa;
+	    }
+	    .v-grid-row-selected > .v-grid-cell {
+		     border: 0;
+		     outline: 0;
+		     color: currentColor;
+		     background-image: none;
+		}
+	   .v-window-header
+	   {
+	   		text-align: center;
+	   }
+	   .v-grid-header .v-grid-cell-focused {
+		  outline: 0 !important;
+		  color: currentColor;
+		&::before {
+		   border: 0;
+		   background: none;
+		   border-bottom: none;
+		   color: currentColor;
+		}
+	  }
+	 }	
+
+.overlapPromoGrid {
+	  font-weight: 400;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+	    padding: 5px 5px 8px 12px;
+	    background-color: #f8f9fa;
+	    border-bottom: 1px solid #c8c8c8;
+	    font-size: 12px;
+	  }
+	    .v-grid-body{
+	  		margin-top: 40px !important;
+	  	}
+	  .v-grid-header .v-grid-cell {
+	    padding: 5px 0px 8px 12px;
+	    color: #54698d;
+	    text-transform: uppercase;
+	    letter-spacing: .5px;
+	    font-weight: 600;
+	    background-image: none;
+	    font-size: 12px;
+	    text-align: left;
+	    background-color: #f8f9fa;
+	    height: 40px !important;
+	  }
+	  .v-grid-header-deco {
+	    background: #f8f9fa;
+	    border: 0;
+	    background-image:none;
+	  }
+	  .v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	  .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	}
+
+	 
+	 .v-popupview-popup-popup_header_info{
+	 	left: 72.8% !important;
+	 	margin-top: -40px !important;
+	 }
+	    
+	 .v-popupview-popup-popup_header_info .v-caption-infopopup_header .v-captiontext{
+	     	 margin-left: 107px !important;
+    	     margin-top: 5px !important;
+             font-size: 14px !important;
+	   }
+	   
+	   .popup_closebutton{
+	   	    width: 35px;
+		    box-shadow: none;
+		    border: none;
+		    background-color: none !important;
+		    /* background-color: #ffffff; */
+		    background-image: none;
+	  }
+	  
+	  .v-popupview-popup-popup_header_info .popupContent .v-horizontallayout{
+	  		background-color: #f8f9fa;
+	  }
+	  
+	  .popup_grid_worklist_error{ 
+	  	height: auto !important;
+	  
+	   .v-grid-header .v-grid-cell:nth-child(1) .v-grid-column-header-content{
+	    	width: 68px!important;
+	    } 
+	     .v-grid-header .v-grid-cell:nth-child(2) .v-grid-column-header-content{
+	    	width: 95px!important;
+	    } 
+	     .v-grid-header .v-grid-cell:nth-child(3) .v-grid-column-header-content{
+	    	width: 73px!important;
+	    	
+	    } 
+	    .v-grid-header .v-grid-cell{
+	    letter-spacing:0.4!important;
+	    }
+	    
+		  .v-grid-cell{
+		 	height: auto !important;
+		    white-space: normal;
+		    line-height: 1.4;
+		    border-bottom:none!important;
+		    overflow:visible;
+		  }
+	  	 .v-grid-row{
+	  	  height:auto!important;
+	  	  min-height:32px;
+	  	  overflow:hidden;
+	  	  padding-bottom:5px;
+	      border-bottom: 1px solid #c8c8c8 !important;
+	      position: static;
+	      transform: translate3d(0px, 0px, 0px)!important;
+	      }
+	      .v-grid-header{
+	      //border-bottom: 1px solid #c8c8c8 !important;
+	      }
+	      .v-grid-tablewrapper{height:145px!important;overflow-y:auto;}
+	   
+	  }
+	  
+	    .v-popupview-popup-popup_header_info {
+		    height: 180px;
+	      }
+}

@@ -1,0 +1,476 @@
+@mixin layout {
+	
+	
+	
+	.vertical-panel-grey-bg
+	 { 	
+		border: 1px solid #d8dde6;
+		background-color: #f8f9fa;
+	 }
+	
+
+	
+	.worklistSection{    
+		.worklistGrid{
+		margin-left: 15px;
+		}
+	
+		
+		.v-slot-worklistHeader{
+		border-bottom: 1px solid #d8dde6;
+		height:50px;
+		padding: 13px 0px 0px;
+   		margin: 0px 12px 22px;
+		}
+	}
+	
+	.v-verticallayout-searchSectionLayout .v-textfield{font-size:11px!important;}
+	.sideMarginSearchSec{margin-left:18px; margin-right:15px;}
+	.filterLabelSection{width: 100%;
+    height: 36px;
+    padding: 6px 16px;
+    border-top: 0.4px solid #d8dde6;
+    border-bottom: 0.4px solid #d8dde6;
+    margin-top:10px;}
+	.seperatorLineGrey
+	{
+	border: 0.5px solid #d8dde6;
+	}   
+   .v-csslayout-container {
+     max-width: 100%;
+   }
+   .apexTheme {
+     padding: 0;
+   }
+	.contentArea {
+	  border: 0;
+	  box-shadow: 0 0 0;
+	  background: #fafafa;
+	  .v-panel-content-contentArea {
+	  	padding: 0 20px;
+	  }
+	}
+	.v-slot-mainBody {
+	    padding: 10px 0px;
+	    &.v-slot-homeLayout {
+		 	text-align: center;
+		 	padding-top: 100px;
+		 	.v-label {
+		 	  text-align: center;
+		 	  display: block;
+		 	}
+		}
+	}
+	.v-csslayout-mainBody {
+	 display: block;
+	}
+	.section {
+		padding: 30px;
+    background: #fff;
+    margin-right: 30px;
+	}
+	.mainMenu {
+	  width: 100%;
+	  padding: 20px 30px;
+	  box-shadow: 0 0 6px #aaa;
+      .v-caption-brand {
+        display: none;
+      }
+      .brand {
+            width: 100px;
+      }
+      .menuBar {
+        float: right;
+        .menuLink {
+	        background: transparent;
+		    border: 0;
+		    box-shadow: 0 0 0;
+		    color: #00529e;
+		    border-bottom: 2px solid transparent;
+		    border-radius: 0;
+		    outline: 0;
+		    font-size: 14px;
+		    &:hover {
+		     background: transparent;
+		     border-bottom: 2px solid #00529e;
+		    }
+		    &:focus {
+		     outline: 0;
+		    }
+        }
+      }
+	}
+
+
+
+	.v-panel-greyPanel {
+	 margin: 10px 0;
+	 border: 0;
+	 border-radius: 0;
+	 background: #eee;
+	 box-shadow: 0 0 0;
+	 .v-panel-caption {
+	    box-shadow: 0 0 0;
+	    border: 0;
+	    background: #eee;
+	 }
+	}
+
+	.v-panel-smokePanel {
+		padding: 0px 15px;
+		border: 1px solid #aeb9d1;
+		border-radius: 0;
+		background-color: #fafafa;
+		font-family: Roboto;
+		font-size: 12px;
+		color: #2b2d42;
+		text-decoration: none solid rgb(43, 45, 66);
+		box-shadow: 0 0 0;
+		margin: 7px 0;
+		.v-panel-caption {
+			background-image: none;
+		    box-shadow: 0 0 0;
+		    border: 0;
+		    background-color: transparent;
+		}
+	}
+	
+	
+	.v-panel-content-mainViewPanel > .v-margin-top {padding:0px;}
+	
+	
+	.PromotionSection{    
+		    border-bottom: 1px solid #d8dde6;
+		    /* height: 228px; */
+		    padding: 13px 0px 0px;
+		    /* margin: 0px 12px 22px; */
+		    border: 0px;
+		}
+		
+		.mytheme .label{font-family:Roboto!important;} 
+	.sectionHeader.v-label-sectionHeader{font-family:Roboto;}
+		
+		.promoFirstLayout{
+			margin-bottom: 0px;
+		}
+		.promotionTextBox{
+			height: 35px;
+			width: 650px;
+		}
+		
+		
+	   .v-has-caption.v-has-width > .v-widget {
+   		 width: 111% !important;
+	}
+	.PromoleftPanelTextboxlength{
+		 width: 98% !important;
+	}
+}
+
+
+
+
+
+@mixin layout {
+	.vertical-panel-grey-bg
+	 { 	
+		border: 1px solid #d8dde6;
+		background-color: #d8dde6;
+	 }
+	
+
+	
+	.worklistSection{    
+		.worklistGrid{
+		margin-left: 15px;
+		}
+		
+		.v-slot-worklistHeader{
+		border-bottom: 1px solid #d8dde6;
+		height:50px;
+		padding: 13px 0px 0px;
+   		margin: 0px 12px 22px;
+		}
+	}
+	
+	.v-verticallayout-searchSectionLayout .v-textfield{font-size:11px!important;}
+	.sideMarginSearchSec{margin-left:18px; margin-right:15px;}
+	.filterLabelSection{width: 100%;
+    height: 36px;
+    padding: 6px 16px;
+    border-top: 0.4px solid #d8dde6;
+    border-bottom: 0.4px solid #d8dde6;
+    margin-top:10px;}
+	.seperatorLineGrey
+	{
+	border: 0.5px solid #d8dde6;
+	}   
+   .v-csslayout-container {
+     max-width: 100%;
+   }
+   .apexTheme {
+     padding: 0;
+   }
+	.contentArea {
+	  border: 0;
+	  box-shadow: 0 0 0;
+	  background: #fafafa;
+	  .v-panel-content-contentArea {
+	  	padding: 0 20px;
+	  }
+	}
+	.v-slot-mainBody {
+	    padding: 10px 0px;
+	    &.v-slot-homeLayout {
+		 	text-align: center;
+		 	padding-top: 100px;
+		 	.v-label {
+		 	  text-align: center;
+		 	  display: block;
+		 	}
+		}
+	}
+	.v-csslayout-mainBody {
+	 display: block;
+	}
+	.section {
+		padding: 30px;
+    background: #fff;
+    margin-right: 30px;
+	}
+	.mainMenu {
+	  width: 100%;
+	  padding: 20px 30px;
+	  box-shadow: 0 0 6px #aaa;
+      .v-caption-brand {
+        display: none;
+      }
+      .brand {
+            width: 100px;
+      }
+      .menuBar {
+        float: right;
+        .menuLink {
+	        background: transparent;
+		    border: 0;
+		    box-shadow: 0 0 0;
+		    color: #00529e;
+		    border-bottom: 2px solid transparent;
+		    border-radius: 0;
+		    outline: 0;
+		    font-size: 14px;
+		    &:hover {
+		     background: transparent;
+		     border-bottom: 2px solid #00529e;
+		    }
+		    &:focus {
+		     outline: 0;
+		    }
+        }
+      }
+	}
+
+
+
+	.v-panel-greyPanel {
+	 margin: 10px 0;
+	 border: 0;
+	 border-radius: 0;
+	 background: #eee;
+	 box-shadow: 0 0 0;
+	 .v-panel-caption {
+	    box-shadow: 0 0 0;
+	    border: 0;
+	    background: #eee;
+	 }
+	}
+
+	.v-panel-smokePanel {
+		padding: 0px 15px;
+		border: 1px solid #aeb9d1;
+		border-radius: 0;
+		background-color: #fafafa;
+		font-family: Roboto;
+		font-size: 12px;
+		color: #2b2d42;
+		text-decoration: none solid rgb(43, 45, 66);
+		box-shadow: 0 0 0;
+		margin: 7px 0;
+		.v-panel-caption {
+			background-image: none;
+		    box-shadow: 0 0 0;
+		    border: 0;
+		    background-color: transparent;
+		}
+	}
+	
+	
+	.v-panel-content-mainViewPanel > .v-margin-top {padding:0px;}
+}
+@mixin layout {
+	.vertical-panel-grey-bg
+	 { 	
+		border: 1px solid #d8dde6;
+		background-color: #d8dde6;
+		
+	 }
+	
+
+	
+	.worklistSection{    
+		.worklistGrid{
+		margin-left: 15px;
+		}
+		.v-slot-promoButtonWorklist{
+		float: right;
+    	padding: 10px 30px 0px 10px;
+		}
+		.v-slot-worklistHeader{
+		border-bottom: 1px solid #d8dde6;
+		height:50px;
+		padding: 13px 0px 0px;
+   		margin: 0px 12px 22px;
+		}
+	}
+	
+	.v-verticallayout-searchSectionLayout .v-textfield{font-size:11px!important;}
+	.sideMarginSearchSec{margin-left:18px; margin-right:15px;}
+	.filterLabelSection{width: 100%;
+    height: 36px;
+    padding: 6px 16px;
+    border-top: 0.4px solid #d8dde6;
+    border-bottom: 0.4px solid #d8dde6;
+    margin-top:10px;}
+	.seperatorLineGrey
+	{
+	border: 0.5px solid #d8dde6;
+	}   
+	.v-splitpanel-second-container-promoBodySection{}
+	.v-slot-topHLayoutRow{
+	background: #ffffff;
+    padding: 11px 11px;
+	}
+   .v-csslayout-container {
+     max-width: 100%;
+   }
+   .apexTheme {
+     padding: 0;
+   }
+	.contentArea {
+	  border: 0;
+	  box-shadow: 0 0 0;
+	  background: #fafafa;
+	  .v-panel-content-contentArea {
+	  	padding: 0 20px;
+	  }
+	}
+	.v-slot-mainBody {
+	    padding: 10px 0px;
+	    &.v-slot-homeLayout {
+		 	text-align: center;
+		 	padding-top: 100px;
+		 	.v-label {
+		 	  text-align: center;
+		 	  display: block;
+		 	}
+		}
+	}
+	.v-csslayout-mainBody {
+	 display: block;
+	}
+	.section {
+		padding: 30px;
+    background: #fff;
+    margin-right: 30px;
+	}
+	.mainMenu {
+	  width: 100%;
+	  padding: 20px 30px;
+	  box-shadow: 0 0 6px #aaa;
+      .v-caption-brand {
+        display: none;
+      }
+      .brand {
+            width: 100px;
+      }
+      .menuBar {
+        float: right;
+        .menuLink {
+	        background: transparent;
+		    border: 0;
+		    box-shadow: 0 0 0;
+		    color: #00529e;
+		    border-bottom: 2px solid transparent;
+		    border-radius: 0;
+		    outline: 0;
+		    font-size: 14px;
+		    &:hover {
+		     background: transparent;
+		     border-bottom: 2px solid #00529e;
+		    }
+		    &:focus {
+		     outline: 0;
+		    }
+        }
+      }
+	}
+
+
+
+	.v-panel-greyPanel {
+	 margin: 10px 0;
+	 border: 0;
+	 border-radius: 0;
+	 background: #eee;
+	 box-shadow: 0 0 0;
+	 .v-panel-caption {
+	    box-shadow: 0 0 0;
+	    border: 0;
+	    background: #eee;
+	 }
+	}
+
+	.v-panel-smokePanel {
+		padding: 0px 15px;
+		border: 1px solid #aeb9d1;
+		border-radius: 0;
+		background-color: #fafafa;
+		font-family: Roboto;
+		font-size: 12px;
+		color: #2b2d42;
+		text-decoration: none solid rgb(43, 45, 66);
+		box-shadow: 0 0 0;
+		margin: 7px 0;
+		.v-panel-caption {
+			background-image: none;
+		    box-shadow: 0 0 0;
+		    border: 0;
+		    background-color: transparent;
+		}
+	}
+	
+	
+	.v-panel-content-mainViewPanel > .v-margin-top {padding:0px;}
+	
+	
+	.v-has-caption.v-has-width > .v-widget {
+   		 width: 111% !important;
+	}
+	.PromoleftPanelTextboxlength{
+		 width: 98% !important;
+		 height: 32px;
+	}
+	
+	.rogLookupFieldfloat{} 
+	.rightSearchBoxSection{float:right}
+	.promoHeaderGrid{
+	margin-left:29px;
+	}
+	.commentsFieldPromo{
+	margin-left:29px;
+	position: relative;
+    bottom: 15px;
+	
+	}
+	
+}

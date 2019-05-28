@@ -1,0 +1,380 @@
+@mixin manageCIG {
+
+	   .v-button-deleteIcon {
+	color: #90a4ae;
+    border: 1px solid #d8dde6;
+    border-radius: 2px;
+    width: 32px;
+    height: 32px;
+	}   
+	
+	.v-slot-savedelete-right {
+	   margin-left: 40%;
+	}
+	.v-grid-select-all-checkbox {
+    display: none;
+}
+	
+     .buttonLayout {
+   		float: right;
+   }
+   .primary.v-button-primary {
+			border: 1px none #0c9ed9;
+	    border-radius: 2px;
+	    background-color: #0c9ed9;
+	    background-repeat: no-repeat;
+	    font-family: 'Roboto';
+	    font-size: 12px;
+	    color: $primary-button-text;
+	    text-decoration: none solid $primary-button-text;
+	    text-align: center;
+	    background-image: none;
+	    box-shadow: 0 0 0;
+	    font-weight: 500;
+	    height: 32px;
+
+	&:focus:after {
+			border : 0;
+			box-shadow: 0 0 0;
+	}
+	&:after {
+			border : 0;
+			box-shadow: 0 0 0;
+	}
+	}
+	.default.v-button-default {
+		border: 1px solid #0ca5e2;
+	    border-radius: 3px;
+	    background-color: #ffffff;
+	    background-repeat: no-repeat;
+	    font-family: 'Roboto';
+	    font-size: 13px;
+	    color: #0ca5e2;
+	    text-decoration: none solid #aeb9d1;
+	    text-align: center;
+	    background-image: none;
+	    font-weight: 300;
+	    height: 32px;
+	} 
+	
+		.v-button:after {
+			border : none;
+	}  
+      .comboBox {
+	      border : 1px solid #d8dde6;
+	      border-radius: 2px;
+	      background-color: #ffffff;
+	      }
+	      
+	.save.v-button-save {
+		border: 1px none #0c9ed9;
+	    border-radius: 2px;
+	    background-color: #0c9ed9;
+	    background-repeat: no-repeat;
+	    font-family: 'Roboto';
+	    font-size: 12px;
+	    color: $primary-button-text;
+	    text-decoration: none solid $primary-button-text;
+	    text-align: center;
+	    background-image: none;
+	    box-shadow: 0 0 0;
+	    font-weight: 500;
+	    height: 32px;
+	    	.v-button:after {
+			border : none;
+	}
+	}
+	
+	.cancel.v-button-cancel {
+		border: 1px none #0c9ed9;
+	    border-radius: 2px;
+	    background-color: #0c9ed9;
+	    background-repeat: no-repeat;
+	    font-family: 'Roboto';
+	    font-size: 12px;
+	    color: #fff;
+	    text-decoration: none solid #0c9ed9;
+	    text-align: center;
+	    background-image: none;
+	    box-shadow: 0 0 0;
+	    font-weight: 500;
+	    height: 32px;
+	    border-color: #0c9ed9;
+	    	.v-button:after {
+			border : none;
+	}
+	}
+
+
+
+
+
+
+	.v-splitpanel-second-container-cigVerticalSplitPanel {
+		overflow: hidden !important;		
+	}
+
+	 .searchCigList{
+	 	margin: 0px;
+	 	padding: 0px;
+	 }
+	
+	.searchCigGrid {
+		
+		font-weight: 400;
+		.v-grid-tablewrapper {
+			border: 0;
+		}
+		.v-grid-row .v-grid-cell {
+		border: 0;
+		padding: 7px 5px -10px 5px;
+		background-color: #ffffff ;
+		border-bottom: none;
+		vertical-align: middle;
+		font-size: 13px;
+		border-bottom: 1px solid #c8c8c8;
+		height: 100px !important;
+	}
+	.v-grid-body{
+		margin-top: 3px !important;
+		}
+		.v-grid-row {
+		&:hover {
+		         background-image: none;
+		         background: none;
+		         border-bottom: none;
+		         border: 1px solid;
+		         margin: -2px;
+		         margin-left: 1px;
+		    }     
+		&:focus {
+		         background-image: -webkit-linear-gradient(top, #f8f9fa 1%, #166ed5 336%);
+		    }     
+		}
+		.v-grid-header{
+			visibility: hidden;
+		}
+		.v-grid-header-deco {
+			background-color: #f8f9fa;
+			border: 0;
+			background-image: none;
+		}
+		.v-grid-footer-deco{
+			background-color: #f8f9fa;
+			border: 0;
+		}
+		.v-grid-row-selected > .v-grid-cell{
+			// background-image: -webkit-linear-gradient(top, #f8f9fa 1%, #166ed5 336%);
+			background-image: none;
+			background: #f8f9fa;
+		}
+		.v-grid-scroller-vertical {
+			background-image: none;
+			border: 0;
+			background: #ffffff ;
+			top: 0px !important;
+			//overflow-x: hidden !important; 
+			//overflow-y: hidden !important;
+		}
+		.v-grid-scroller-horizontal{
+			//overflow-x: hidden !important;
+			//overflow-y: hidden !important;
+		}
+		.v-grid-row-focused {
+			//border: 1px solid;
+			//outline: 0 !important;
+		}
+		.v-grid-cell{background-color:  #90a4ae;}
+		.v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+		border: 0;
+		color: currentColor;
+		}
+		.v-grid-header .v-grid-cell-focused {
+		&::before {
+		   border: 0;
+		   background: none;
+		   border-bottom: none;
+		   color: currentColor;
+		  }
+		}
+}
+	
+	.cigSearchSectionVLayout{
+		background-color: white;
+		.v-slot-searchSectionLayout{
+			overflow-y: hidden;
+			overflow-x: hidden;
+		}
+	}
+	.v-splitpanel-second-container-searchItemStyle{
+			overflow-y: hidden;
+			overflow-x: hidden;
+	}
+	.v-horizontallayout-bgcolorSearchSection{
+		background-color: white;
+	}
+
+	.divisionpopuplabel{
+	 	font-family: Roboto;
+        font-size: 11px;
+        color: #8d99ae;
+        text-decoration: none solid rgb(141, 153, 174);
+        line-height: 20px;
+        margin:  0;
+        font-weight: 600;
+        padding-left: 24px;
+	}
+	
+	      
+	
+	.v-verticallayout-searchItemSection{
+		border-radius: 6px;
+		background-color: #ffffff;
+		box-shadow: 0px 2px 9px #d8dde6;
+		border: 1px solid #c8c8c8;
+		padding: 0px;
+		margin: 40px 40px 20px 30px;
+		width: 95% !important;
+	}
+	
+	
+	.v-slot-bgcolorSearchSection{
+		padding: 0px !important;
+	}
+	.cigItemheaderdelete{
+	//	float: right;
+	//	margin-left: 800px;
+	}
+
+	.add-seperator-right-deletecig:after{
+	 		    content: " | ";
+			    padding: 0;
+			    top: 0px;
+			    position: relative;
+			    left: 15px;
+			    font-size: 31px;
+			    font-weight: 100;
+			    color: #d3d3d3;
+			    opacity: 1;
+			}
+	
+		.v-slot-ciglabelHLayout{
+			width: 50%;
+		}
+		.v-slot-cigbuttonHLayout{
+			width: 50%;
+			.cigbuttonHLayout{
+				float: right;
+				margin-right: 38px;
+			}
+		}    
+		 
+	 .cigDescriptionLabel{
+		    padding: 5px 0px;
+		    font-family: Roboto;
+		    font-size: 20px;
+		    color: #4a4a4a;
+		    font-weight: 500;
+		    letter-spacing: 1.5px;
+		}
+		.v-caption-cigDescriptionLabel{
+			.v-captiontext{
+		    font-size: 15px;
+		    padding: 18px 0px 0px 20px;
+		    }
+		}
+		
+		.cigLeftPanel3{
+			display: block !important;
+		}
+		.cigLeftPanel2{
+			margin-left: 180px;
+		}
+		
+		
+		
+		.cigItemgridlayout{ 
+       font-weight: 400;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	    .v-grid-header .v-grid-select-all-checkbox{
+	    	display: none;
+	    }
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+	    padding: 0px 1px 0px 20px;
+	    background-color: #ffffff;
+	    border-bottom: 1px solid #c8c8c8;
+	    font-size: 12px;
+	    text-align: left;
+	  }
+	    .v-grid-body{
+	  		margin-top: 40px !important;
+	  	}
+	  .v-grid-header .v-grid-cell {
+	    padding: 5px 0px 4px 20px;
+	    color: #54698d;
+	    text-transform: uppercase;
+	    letter-spacing: .5px;
+	    font-weight: 600;
+	    background-image: none;
+	    font-size: 12px;
+	    text-align: left;
+	    background-color: #f8f9fa;
+	    height: 40px !important;
+	         .v-grid-column-header-content{
+	    		 line-height: 18px !important;
+	    }
+	  }
+	  .v-grid-header-deco {
+	    background: #f8f9fa;
+	    border: 0;
+	    background-image:none;
+	  }
+	  .v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	  .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	  
+	}
+		
+	.v-margin-top {
+	margin-top: 20px;
+	}
+	
+	.v-margin-left {
+	margin-left: 10px;
+	}
+			
+
+
+
+
+
+
+	      
+}

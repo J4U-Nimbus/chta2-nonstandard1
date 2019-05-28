@@ -1,0 +1,15 @@
+Implementation-Title: PPAP-UI
+Implementation-Version: @project.version@
+Build-Filename: ppap-web-@project.version@.ear
+Build-Timestamp: @timestamp@
+Build-Number: @BUILD_NUMBER@
+Build-Id: @BUILD_ID@
+Job-Name: @JOB_NAME@
+Build-Tag: @BUILD_TAG@
+Built-By: @build-master-id@
+Built-On-OS-Name: @os.name@
+Built-On-OS-Arch: @os.arch@
+Built-On-OS-Version: @os.version@
+Implementation-Vendor-Id: @project.groupId@
+SCM-Branch: @scm-branch@
+SVN-Revision: @svn-revision@

@@ -1,0 +1,239 @@
+@mixin typography {
+	
+	.titleLayoutCenter .v-label-title{
+	text-align:center;	
+	}
+	
+	.v-Notification-error{
+	border: 1px solid undefined;
+	background-color: #fa5555;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.24);
+	
+	}
+	.v-Notification-error .v-Notification-caption{
+	
+	font-family: Roboto;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: Regular;
+	line-height: 20px;
+	
+	}
+	.v-Notification-humanized{
+
+	border: 1px solid undefined;
+	background-color: #08bb5a;
+	box-shadow:0px 2px 2px rgba(0,0,0,0.24);
+	
+	}
+	.v-Notification-humanized .v-Notification-caption{
+	
+	font-family: Roboto;
+	font-size: 14px;
+	color: #ffffff;
+	font-weight: Regular;
+	line-height: 20px;
+	
+	}
+
+	.accLabeltext{
+		  font-family: Roboto;
+		  font-size: 10px;
+		  font-weight: normal;
+		  font-style: normal;
+		  font-stretch: normal;
+		  line-height: 1.8;
+		  letter-spacing: normal;
+		  text-align: left;
+		  color: #4a4a4a;
+	}
+	.worklistLabel{
+    padding: 5px 0px;
+    font-family: Roboto;
+    font-size: 20px;
+    color: #4a4a4a;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+	}
+	.sectionHeader {
+		margin: 30px 0;
+		font-size: 28px;
+		letter-spacing: 1.2px;
+	}
+	.statusTextOpen {
+		  font-size: 13px;
+		  font-weight: 500;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #f5a623;
+		}
+
+.statusTextFinalized {
+	
+		  font-size: 13px;
+		  font-weight: 500;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #8b572a;
+		  padding-right:10px;
+		}
+
+
+.statusTextActive {
+		 
+		  font-size: 13px;
+		  font-weight: 500;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #08bb5a;
+		}
+
+.statusTextEnded {
+	
+		  font-size: 13px;
+		  font-weight: 500;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #90a4ae;
+		}
+
+.BlueText {
+		  font-size: 13px;
+		  display: inline;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #00a0e0;
+		}
+
+.MutedText {
+
+		  font-size: 13px;
+		  display: block;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #90a4ae;
+		}
+
+.NormalBlackText {
+		 
+		  font-size: 13px;
+		  display: block;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #4a4a4a;
+		}
+
+.Header_Text1 {
+		  object-fit: contain;
+	
+		  font-size: 14px;
+		  font-weight: 500;
+		  letter-spacing: 1.5px;
+		  text-align: left;
+		  color: #4a4a4a;
+		}
+
+.Header_Text2 {
+		  object-fit: contain;
+		  
+		  font-size: 20px;
+		  letter-spacing: 1.5px;
+		  text-align: left;
+		  color: #4a4a4a;
+		}
+
+.SmallText{
+		  object-fit: contain;
+		
+		  font-size: 10px;
+		  line-height: 1.8;
+		  text-align: left;
+		  color: #4a4a4a;
+		}
+
+.BoldText{
+		 object-fit: contain;
+		
+		  font-size: 14px;
+		  font-weight: 500;
+		  line-height: 1.86;
+		  text-align: left;
+		  color: #323c47;
+		}
+
+.BoldUpperText{
+		
+		  font-size: 13px;
+			display: block;		  
+		  line-height: 1.38;
+		  letter-spacing: 0.1px;
+		  text-align: left;
+		  color: #4a4a4a;
+}
+
+.WorklistGridHeaderText{
+	 
+	  font-size: 12px;
+	  font-weight: 500;
+	  letter-spacing: 0.5px;
+	  text-align: left;
+	  color: #54698d;
+}
+
+.Worklist-Create-Pr {
+	width: 42px;
+	height: 13px;
+	font-size: 11px;
+	text-align: left;
+	color: #00a0e0 ;
+	text-decoration: none;
+	letter-spacing: .7px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 600;
+}
+.Breadcrumb_1 {
+	width: 0px;
+	height: 13px;
+	font-size: 11px;
+	text-align: left;
+	color: #00a0e0 ;
+	text-decoration: none;
+	letter-spacing: .7px;
+	margin: 0px;
+	padding: 0px;
+	font-weight: 600;
+}
+
+.Breadcrumb_2 {
+	height: 13px;
+	font-size: 11px;
+	text-align: left;
+	text-decoration: none;
+	letter-spacing: .7px;
+	padding: 0px;
+	margin: 0px;
+	font-weight: 400;
+	color: #323c47 ;
+}
+
+.topTextField{
+    position: relative;
+    font-size:14px;
+    margin-bottom: 20px;
+    width: 430px;
+}
+
+.promoLeftPanelLabel {
+font-size: 9px;
+line-height: normal;
+}
+
+
+	 .mytheme .label{font-family:Roboto!important;} 
+	.sectionHeader.v-label-sectionHeader{font-family:Roboto;}
+	
+	
+	
+	
+}

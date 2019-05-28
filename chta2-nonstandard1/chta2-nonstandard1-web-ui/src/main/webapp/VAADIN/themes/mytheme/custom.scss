@@ -1,0 +1,62 @@
+
+@mixin custom {
+
+	//FlexWrap for access denied page
+	.accessDeniedFlexwrap {
+		.empty{
+		    background-color:white;
+		}
+		.enclose{
+		    background-color:LightGray;
+		}
+	    .titleLayout {
+	    	background: Tomato;
+	    }
+	    .title {
+	    	background: Tomato;
+	    	color: white;
+	        font-weight: bold;
+	        font-size: 40px;
+	        line-height: 30px;
+	        padding: 15px;
+	    }
+	    .itembox {
+	    	background: white;
+	    	color: black;
+	        font-weight: bold;
+	        font-size: 24px;
+	        line-height: 220px;
+	        padding: 5px;
+	    }
+	}
+	
+	.accessDeniedFlexwrap[width-range~="0-599px"] {
+	    .itembox {
+	    	font-size: 12px;
+	    }
+	    .title {
+	    	font-size: 16px;
+	    }
+	}
+	
+	.accessDeniedFlexwrap[width-range~="600px-1049px"] {
+	    .itembox {
+	    	font-size: 18px;
+	    }
+	    .title {
+	    	font-size: 24px;
+	    }
+	}
+	.accessDeniedFlexwrap[width-range~="1050px-"] {
+	    .itembox {
+	    	font-size: 24px;
+	    }
+	    .title {
+	    	font-size: 48px;
+	    }
+	}
+
+}
+
+
+  

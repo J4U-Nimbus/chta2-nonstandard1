@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Configuration monitorInterval="60">
+	<Properties>
+		<Property name="log-path">/appl/spool/wl_apps/logs/chta2-nonstandard1</Property>
+	</Properties>
+	<Appenders>
+		<Console name="Console-Appender" target="SYSTEM_OUT">
+			<PatternLayout>
+				<pattern>
+					%d{ISO8601} [%t] %-5p %c{1} userId=%X{userId} requestId=%X{requestId}: %m %n
+				</pattern>
+			</PatternLayout>
+		</Console>
+       	<RollingFile name="App-File-Appender" fileName="${log-path}/chta2-nonstandard1.log"
+            				filePattern="${log-path}/chta2-nonstandard1-%d{yyyy-MM-dd}-%i.log" >
+                   <PatternLayout>
+                          <pattern>%-6p: %d{MM.dd.yyyy HH:mm '('ss.SSS')'} [%x%t] %c{1} userId=%X{userId} requestId=%X{requestId}: %m %n</pattern>
+                   </PatternLayout>
+                   
+                   <Policies>
+                          <SizeBasedTriggeringPolicy size="2 MB" />                  
+                   </Policies>
+                   <DefaultRolloverStrategy max="30"/>
+    	</RollingFile>				
+	</Appenders>
+	<Loggers>
+		<Logger name="com" level="@logger.level@" additivity="false">
+			<AppenderRef ref="App-File-Appender" />
+			<AppenderRef ref="Console-Appender" />
+		</Logger>
+		<Root>
+			<AppenderRef ref="Console-Appender" />
+		</Root>
+	</Loggers>
+</Configuration>

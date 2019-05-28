@@ -1,0 +1,25 @@
+@mixin lists {
+	.productList {
+	 list-style: none;
+	 padding-left: 0;
+	 li {
+	 	margin: 10px 0;
+
+	 }
+	 .greyPanel {
+		background-color: #fafafa;
+    	padding: 8px;
+    	.h3 {
+    		margin-top: 12px;
+    	}
+    	.row {
+    		div[class^="col"] {
+    			border-right: 1px solid #2b2d42;
+    			&:last-child {
+    			 border-right: 0;
+    			}
+    		}
+    	}
+	 }
+	}
+}

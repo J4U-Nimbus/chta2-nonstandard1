@@ -1,0 +1,42 @@
+@import "mytheme.scss";
+@import "addons.scss";
+@import "components/button.scss";
+@import "components/form.scss";
+@import "components/layout.scss";
+@import "components/list.scss";
+@import "components/typography.scss";
+@import "components/navigation.scss";
+@import "components/gridStyle.scss";
+@import "components/popup.scss";
+@import "components/multiselect.scss";
+@import "apex.scss";
+@import "components/multiselectComboBox.scss";
+@import "custom.scss";
+@import "components/manageUserPreference.scss";
+@import "components/manageCIG.scss";
+
+// This file prefixes all rules with the theme name to avoid causing conflicts with other themes.
+// The actual styles should be defined in mytheme.scss
+
+.mytheme {
+  font-family: Roboto;
+  .v-label {
+  	display: block;
+  }
+  @include addons;
+  @include mytheme;
+  @include buttons;	
+  @include lists;
+  @include layout;
+  @include typography;
+  @include gridStyle;
+  @include forms;
+  @include navigation;
+  @include popup;
+  @include multiselect;
+  @include multiselectComboBox;
+  @include custom;
+  @include manageUserPreference;
+  @include manageCIG;
+
+}

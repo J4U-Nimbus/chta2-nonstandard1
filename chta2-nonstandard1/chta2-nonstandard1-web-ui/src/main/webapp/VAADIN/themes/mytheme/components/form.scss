@@ -1,0 +1,241 @@
+@mixin forms {
+
+	 .v-slot-formsub1{display:block;}
+
+     .v-slot {
+    .v-caption {
+      padding-bottom: 0;
+    }
+    .v-datefield {
+      .v-datefield-textfield {
+        border: 0;
+  border: 1px solid #d8dde6;
+        border-radius: 0;
+        box-shadow: 0 0 0;
+        padding-left: 37px;
+      }
+      .v-datefield-button {
+        background-color: #fff;
+        border-radius: 0;
+        color: #8d99ae;
+        border: 0;
+      }
+    }
+    .v-filterselect {
+      .v-filterselect-input {
+        border: 0;
+        background: transparent;
+        box-shadow: 0 0 0;
+  border: 1px solid #d8dde6;
+        border-radius: 0;
+      }
+    }
+   
+
+    .v-textfield {
+        border: 0;
+  border: 1px solid #d8dde6;
+        border-radius: 0;
+        box-shadow: 0 0 0;
+        font-size: 14px;
+        padding-left: 6px;
+   		border-radius: 2px;
+    }
+    .v-captiontext {
+         font-family: Roboto;
+        font-size: 11px;
+        color: #8d99ae;
+        text-decoration: none solid rgb(141, 153, 174);
+        line-height: 20px;
+        margin:  0;
+        font-weight: 600;
+    }
+}
+    .v-filterselect-suggestpopup [class$="suggestmenu"] {
+      border-radius: 0;
+    }
+    .v-filterselect-suggestpopup {
+      .gwt-MenuItem-selected {
+        background-color: #8d99ae;
+        background-image: none;
+        border-radius: 0;
+      }
+    }
+
+  .field-box.v-textfield-field-box{
+  opacity: 0.76;
+  font-size: 11px;
+  line-height: 2;
+  text-align: left;
+  color: #4a4a4a;
+  width: 78px;
+  height: 31.3px;
+  border-radius: 2px;
+  border:0;
+  background-color: #f8f9fa;
+  border: 1px solid #d8dde6;
+  }
+
+    .field-no-box.v-textfield-field-no-box{
+  opacity: 0.76;
+  font-size: 11px;
+  line-height: 2;
+  text-align: left;
+  color: #4a4a4a;
+  width: 84px;
+  height: 31.3px;
+  border-radius: 2px;
+  border:0;
+  background-color: #f8f9fa;
+  } 
+
+    .pid-field-box.v-textfield-pid-field-box{
+
+     width:150px;
+
+     }  
+    .v-datefield-startday{ 
+     width: 92px;
+height: 31.3px;
+border-radius: 2px;
+background-color: #ffffff;
+border: solid 1px #d8dde6;
+font-size: 10px;
+
+  }
+
+    .v-datefield-startday > .v-datefield-textfield{
+        font-size: 10px;
+
+    }
+
+    .v-datefield-endday{ 
+     width: 152px;  
+     }
+
+    .v-slot-inputwrap{display:block} 
+
+    .v-slot-formsub2{display:block} 
+
+    .v-filterselect-comboboxsec .v-filterselect-input{
+        border: 0;
+        background: none;
+        font-weight: 600;
+        background-image: none;
+        box-shadow: none;
+        text-shadow: none;
+        width: 72px;
+        height: 15px;
+        object-fit: contain;
+        font-size: 13px;
+        letter-spacing: 0.1px;
+        text-align: right;
+        color: #00a0e0;
+        width: 119px;
+        height: 35px;
+        -webkit-box-shadow: none;
+        text-align: left;
+            border: none!important;
+
+     }
+
+     .v-filterselect-comboboxsec .v-filterselect-button{ color : #00a0e0 }
+
+     .v-slot-field-boxes-accrd{width: 45%; float:left;}
+     
+     
+
+	 .StatusMultiSelect.v-select-StatusMultiSelect{font-size:12px}
+	 .StatusMultiSelect.v-select-StatusMultiSelect .v-select-select{width:105px;}
+	
+	 .HorizontalMultiSelect.v-select-HorizontalMultiSelect{font-size:12px}
+	 .HorizontalMultiSelect.v-select-HorizontalMultiSelect .v-select-select{width:215px;}
+	
+	
+
+	 .accordionmain.v-accordion-accordionmain .v-caption .Vaadin-Icons{   
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: solid 1px #d8dde6;
+	text-align: center;
+	line-height: 1.6;
+	color: #54698d;
+	margin-right: 10px;
+	padding-left: 4px;
+	}
+
+	.accordionmain.v-accordion-accordionmain{margin: 10px;}
+	
+	.accordionmain.v-accordion-accordionmain .v-accordion-item-open{height:170px!important;}    
+	.accordionmain.v-accordion-accordionmain .v-caption .Vaadin-Icons::after { 
+	content: "Clear";
+	  width: 31px;
+	  font-family: Roboto;
+	  font-size: 11px;
+	  letter-spacing: 0.1px;
+	  text-align: right;
+	  color: #00a0e0;
+	  font-weight: 600;
+	  padding-left: 184px;
+	}
+
+    
+    .accordionmain.v-accordion-accordionmain .v-accordion-item-open .v-accordion-item-content{
+    	height: 134px!important;
+   	    overflow: hidden; }
+   	    
+   	 .v-select-hidescroll .v-select-select{overflow: hidden;}	
+   	  
+   	 .v-caption-spacehide{display:none;}   
+   	 
+   	 
+   	 .proaccordionmain.v-accordion-proaccordionmain .v-accordion-item-open{height:142px!important;}   
+   	 
+	 .proaccordionmain.v-accordion-proaccordionmain .v-caption .Vaadin-Icons{   
+	width: 20px;
+	height: 20px;
+	border-radius: 4px;
+	border: solid 1px #d8dde6;
+	text-align: center;
+	line-height: 1.6;
+	color: #54698d;
+	margin-right: 10px;
+	padding-left: 4px;
+	}
+
+	.proaccordionmain.v-accordion-proaccordionmain{margin: 10px;}
+	
+	.proaccordionmain.v-accordion-proaccordionmain .v-accordion-item-open{height:156px!important;}    
+	.proaccordionmain.v-accordion-proaccordionmain .v-caption .Vaadin-Icons::after { 
+	content: "Clear";
+	  width: 31px;
+	  font-family: Roboto;
+	  font-size: 11px;
+	  letter-spacing: 0.1px;
+	  text-align: right;
+	  color: #00a0e0;
+	  font-weight: 600;
+	  padding-left: 184px;
+	}
+
+    
+    .proaccordionmain.v-accordion-proaccordionmain .v-accordion-item-open .v-accordion-item-content{
+    	height: 134px!important;
+   	    overflow: hidden; }
+   	     
+   	.proaccordionmain.v-accordion-proaccordionmain .v-caption 
+   	{padding-bottom: 6.5px;
+    padding-top: 6.5px;	}
+    
+    
+	 .proaccordionmain.v-accordion-proaccordionmain .v-captiontext   {object-fit: contain;
+	  font-size: 12px;
+	  letter-spacing: 0.3px;
+	  text-align: left;
+	  color: #54698d;
+	  font-family: Roboto;
+	  }
+      .gwt-MenuItem{ font-size:12px;}
+      .v-csslayout.v-layout.v-widget{font-family:Roboto;}
+ }

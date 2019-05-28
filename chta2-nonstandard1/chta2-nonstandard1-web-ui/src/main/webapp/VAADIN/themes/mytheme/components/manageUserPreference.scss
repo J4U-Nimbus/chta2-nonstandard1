@@ -1,0 +1,462 @@
+@mixin manageUserPreference {
+    .v-slot-preferenceheaderview{
+	   margin-bottom:25px;
+	}
+	.background_hlayout {
+	    background-color: white;
+	    width: 97%;
+	    margin: 0 auto;
+	    padding-right: 40px;
+	}
+	.preferencelayout{margin-top:44px;}
+	
+	.v-horizontallayout-preferences_header{
+    position: fixed;
+    width: 98.4%;
+    top: 71px;
+    background: white;
+    z-index: 11;
+    border-bottom: 1px solid #c8c8c8;
+    border-top: 1px solid #364650;
+    }
+    .v-menubar-submenu-usermenuposition{
+    margin-top: -18px;
+    margin-left: 10px;
+    }
+    .v-menubar-submenu-settingsMenu .v-menubar-menuitem {
+    border-bottom: 1px solid #d8dde6;
+    padding-left: 45px;
+    line-height: 37px;
+    color: #2795d6;
+}
+   .v-menubar-submenu-settingsMenu{
+			font-family: Roboto;
+			font-size: 13px;
+			color: #166ed5;
+			font-weight: Regular;
+			line-height: 36px;
+		    background-color: #ffffff;
+		    box-shadow: 0px 4px 6px rgba(216,221,230,1);
+		   
+			
+		
+			.v-menubar-menuitem{
+			border-bottom: 1px solid #d8dde6;
+			padding-left: 45px;
+			line-height: 37px; 
+			color:#2795d6;
+			}
+			
+			
+		    .v-menubar-menuitem-selected {
+				
+				border-radius: 0;
+				background:transparent;
+				background-image:   none;
+				-webkit-box-shadow: none;
+				box-shadow: none;
+				text-shadow: none;
+				background-color:white!important;
+				color: #166ed5;	
+				}
+		
+		}
+	 .v-verticallayout-preferenceheaderview{
+		border-radius: 6px;
+		background-color: #ffffff;
+       box-shadow: 0px 2px 9px #d8dde6;
+    border: 1px solid #c8c8c8;
+	 }
+	 .v-grid-header{
+background-color: #f8f9fa;
+}	 
+
+	  .userprefgridStyle{
+	 background-color:white;
+	 font-weight: 400;
+	
+     border-bottom: 1px solid #c8c8c8;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	    //margin-left:2%;
+	    .v-grid-header .v-grid-select-all-checkbox{
+	    	display: none;
+	    }
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+	    padding: 0px 1px 0px 4px;
+	    background-color: #ffffff;
+	    border-bottom: 1px solid #c8c8c8;
+	    font-size: 12px;
+	    text-align: left;
+	  }
+	    .v-grid-body{
+	  		margin-top: 40px !important;
+	  	}
+	  .v-grid-header .v-grid-cell {
+	    padding: 5px 0px 4px 4px;
+	    color: #54698d;
+	    text-transform: uppercase;
+	    letter-spacing: .5px;
+	    font-weight: 600;
+	    background-image: none;
+	    font-size: 12px;
+	    text-align: left;
+	    background-color: #f8f9fa;
+	    height: 40px !important;
+	         .v-grid-column-header-content{
+	    		 line-height: 18px !important;
+	    }
+	  }
+	  .v-grid-header-deco {
+	    background: #f8f9fa;
+	    border: 0;
+	    background-image:none;
+	  }
+	  .v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	  .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	 }	
+	  .v-button-savebuttonMngDef{
+	      margin: 9px 35px;
+	  }
+	  .v-slot-background_hlayout{
+	  border-bottom: 1px solid #d8dde6;
+	  padding: 17px 0 20px;
+	      
+	  }
+	  .CategoriesBoldText{
+	  font-size:13px;
+	  }
+	  .preferenceheaderview .v-spacing{height:0px}
+	  .v-csslayout-asmMultiSelectPrefpopup{ 
+	  padding-right:100px;
+	  .v-label{
+		float:left;
+		}
+	  	.left_panel_header {
+	    text-decoration: none solid #8d99ae;
+	    line-height: 31px;
+	    font-weight: 500;
+	    font-size: 14px !important;
+	    color: #45484c;
+		}		
+	  }
+	  .v-label-hlabelManageDef{
+	    padding: 9px 0 0 30px;
+	    font-weight: 400;
+	    font-family: Roboto;
+	    letter-spacing: .7px;
+	    font-size: 20px;
+	   }
+      .v-slot-asmMultiSelectPrefpopup{
+       float:right;
+      }	
+      .mainViewPanel{
+       font-family: Roboto;
+      }  
+      .v-slot-savebuttonMngDef{
+      float:right;      
+      }	
+    
+	
+	  
+	  .preferencelayout{
+	  	padding: 0px;
+	  	background-color: #f8f9fa;
+	  	.v-slot-contentArea{
+	  		padding-top: 0px;
+    		display: none;
+	  	}	
+	  }
+	  
+	  .preferenceheaderview{
+	  	    padding: 0px;
+    		
+	  }
+	  
+	  .v-slot-preferenceheaderview{
+    			width: 96% !important;
+   				margin: 0 auto;
+   				padding-top: 15px;
+   				margin-bottom:14px;
+    	}
+    		
+	  .settingshlayout{
+	  
+	  }
+	  .preferenceheaderview .v-grid-cell.frozen{box-shadow:none;}
+	  .mngUsersButton{
+		    height: 7px;
+		    border: 0;
+		    font-size: 18px;
+		    background-image: none;
+		    color: #4a4a4a;
+		    margin-left: 15px;
+		    margin-top: 6px;
+		    background: none;
+		    box-shadow: none;
+		    text-shadow: none;
+		    padding-left: 23px;
+    		padding-top: 5px;
+	    }
+		.settingspanelcontent{
+			background: red;
+		}
+		
+	
+		
+		.padding_left{
+			left: 588px;
+		}
+	
+		.popup_box_edit{
+		  .popupContent .v-window-contents{
+		  	    margin-top: 1px !important;
+		  }
+		  .popupContent .v-window-closebox{
+		  	background-color: #f8f9fa;
+		  }
+		  .v-window-header{
+		  	background-color: #f8f9fa;
+		  }
+		}
+		.popup__box_settings
+	   {
+		 font-weight: 300;
+		 .v-grid-tablewrapper {
+	    	border: 0;
+	  	}
+	  	.v-grid-tablewrapper{
+	  		background-color: white;
+	  	}
+	  	.v-grid-cell {
+	    	border: 0;
+	    	background-color: white;
+	    	//border-bottom: 1px solid #D3D3D3;
+	    	font-weight: initial;
+	    	font-size: 14px;
+	    }
+	    .v-grid-column-header-content
+	    {
+	    	margin-left: -10px
+	   	}
+		.v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    	border: 0;
+	  	}
+	  	.v-grid-body{
+	  		margin-top: 40px !important;
+	  		
+	  	}
+	  	.v-grid-row .v-grid-cell{
+	  		padding-top: 10px;
+	  		//border-bottom: 1px solid #c8c8c8;
+		    color: currentColor;
+		    vertical-align: middle;
+			font-size: 13px;
+		}
+	  	 .v-grid-header-deco {
+		    background: #f8f9fa;
+		    border: 0;
+	  	}
+	  	.v-grid-scroller-vertical {
+		    background-image: none;
+		    border: 0;
+		    background: #fff;
+		    top: 40px !important;
+	  	}
+	  	.v-grid-header .v-grid-cell {
+		    color: #54698d;
+		    letter-spacing: .5px;
+		    font-weight: 600;
+		    background-image: none;
+		    font-size: 12px;
+		    text-align: left;
+		    background-color: white;
+		    height: 40px !important;
+		    //border-top: 1px solid #D3D3D3;
+		    webkit-box-shadow: none !important;
+	  	}
+	  	.v-grid-cell.frozen{
+	  		    -webkit-box-shadow: none !important;
+   	 			box-shadow: none !important;
+	  	}
+	    .v-grid-column-header-content
+	    {
+	    	line-height: 20px;
+	    } 
+	    .v-grid-column-default-header-content
+	 	 {
+	  		background-color: white;
+	 	 }
+	     .v-grid-cell-focused {
+		    color: #54698d;
+		    letter-spacing: .5px;
+		    font-weight: 400;
+		    background-image: none;
+		    font-size: 12px;
+		    text-align: left;
+		    background-color: white;
+	    }
+	    .v-grid-row-selected > .v-grid-cell {
+		     border: 0;
+		     outline: 0;
+		     color: currentColor;
+		     background-image: none;
+		     border-bottom: 1px solid #c8c8c8 !important;
+		}
+	   .v-window-header
+	   {
+	   		text-align: center;
+	   }
+	   .v-grid-header .v-grid-cell-focused {
+		  outline: 0 !important;
+		  color: currentColor;
+		&::before {
+		   border: 0;
+		   background: none;
+		   border-bottom: none;
+		   color: currentColor;
+		}
+	  }
+	 }	
+	
+	.popup__box_settings .v-grid-row-selected > .v-grid-cell {
+    	border-bottom: none !important;
+    }
+	.HlayoutrBorderOnEditPopup{
+		border-top: 1px solid gainsboro;
+	    height: 51px;
+	    /* top: 36px; */
+	    padding-top: 12px;
+	}	
+	 .saveBtnSettingsPopup{
+	 	width: 70px !important;
+	 	height: 30px !important;
+	 	//float: right;
+	    /* right: -43px; */
+	    left: 305px;
+	    /* padding-top: 6px; */
+	    margin-top: 12px;
+	 }	
+	  .ForPreviousBtnSettingsPopup{
+	 	width: 70px !important;
+	 	height: 30px !important;
+	 	margin-top: 12px;
+	 	margin-left: 5px;
+	 }	
+	 .ForSaveBtnSettingsPopup{
+	 	width: 70px !important;
+	 	height: 30px !important;
+	 	left: 209px;
+	 	margin-top: 12px;
+	 }	
+	 .v-grid-RemoveHeaderCheckbox{
+	 	.v-grid-tablewrapper{
+	 		background: white;
+	 	  .v-grid-header .v-grid-row {
+	 	  	display: none;
+	 	  }
+	 	}
+	 }
+
+
+.userprefgridlayoutUp{ 
+       font-weight: 400;
+	  .v-grid-tablewrapper {
+	    border: 0;
+	    .v-grid-header .v-grid-select-all-checkbox{
+	    	display: none;
+	    }
+	  }
+	  .v-grid-row .v-grid-cell {
+	    border: 0;
+	    background-color: #ffffff;
+	    border-bottom: 1px solid #c8c8c8;
+	    font-size: 12px;
+	    text-align: left;
+	  }
+	    .v-grid-body{
+	  	
+	  	}
+	  .v-grid-header .v-grid-cell {
+		  	color: #54698d;
+		    text-transform: uppercase;
+		    letter-spacing: .5px;
+		    font-weight: 600;
+		    background-image: none;
+		    font-size: 12px;
+		    text-align: left;
+		    background-color: #f8f9fa;
+		    height: 40px !important;
+	        .v-grid-column-header-content{
+	    
+	    }
+	  }
+	  
+	  .v-grid-header-deco {
+	    background: #f8f9fa;
+	    border: 0;
+	    background-image:none;
+	  }
+	  .v-grid-scroller-vertical {
+	    background-image: none;
+	    border: 0;
+	    background: #ffffff;
+	  }
+	  .v-grid-row-selected > .v-grid-cell {
+	    border: 0;
+	    outline: 0;
+	    color: currentColor;
+	    background-image: none;
+	    border-bottom: 1px solid #c8c8c8;
+
+	  }
+	  .v-grid-cell-focused {
+	    outline: 0 !important;
+	  }
+	  .v-grid-row-focused > .v-grid-cell.v-grid-cell-focused::before {
+	    border: 0;
+	  }
+	  .v-grid-header .v-grid-cell-focused {
+	    outline: 0 !important;
+	    &::before {
+	      border: 0;
+	      background: none;
+	      border-bottom: none;
+	    }
+	  }
+	
+}
+
+
+
+	
+		
+		
+		
+}
