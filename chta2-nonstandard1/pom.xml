@@ -233,9 +233,9 @@
 			<id>build-server-release</id>
 			<distributionManagement>
 				<repository>
-					<id>SafewayRelease</id>
-					<name>SafewayRelease</name>
-					<url>${deployHttpCtx}/content/repositories/SafewayRelease/</url>
+					<id>AlbertsonsRelease</id>
+					<name>AlbertsonsRelease</name>
+					<url>${deployHttpCtx}repository/AlbertsonsRelease/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
@@ -243,9 +243,9 @@
 			<id>build-server-release-candidate</id>
 			<distributionManagement>
 				<repository>
-					<id>SafewayReleaseCandidate</id>
-					<name>SafewayReleaseCandidate</name>
-					<url>${deployHttpCtx}/content/repositories/SafewayReleaseCandidate/</url>
+					<id>AlbertsonsReleaseCandidate</id>
+					<name>AlbertsonsReleaseCandidate</name>
+					<url>${deployHttpCtx}repository/AlbertsonsReleaseCandidate/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
@@ -255,7 +255,7 @@
 				<repository>
 					<id>SafewaySnapshot</id>
 					<name>SafewaySnapshot</name>
-					<url>${deployHttpCtx}/content/repositories/SafewaySnapshot/</url>
+					<url>${deployHttpCtx}repository/AlbertsonsSnapshot/</url>
 				</repository>
 			</distributionManagement>
 		</profile>
