@@ -31,7 +31,7 @@
 			**/VsApplication.java
 		</sonar.coverage.exclusions>
 		<vaadin.theme>mytheme</vaadin.theme>
-		<vaadin.version>8.1.0</vaadin.version>
+		<vaadin.version>8.14.1</vaadin.version>
 		<vaadin.plugin.version>8.1.2</vaadin.plugin.version>
 	</properties>
 	<dependencies>
